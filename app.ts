@@ -129,3 +129,89 @@
 //         items: ['d', 'e', 'f'],
 //     }
 // ]
+
+// type userArr = myObj[];
+
+// let arr: userArr = [
+//     {
+//         id: 10003,
+//         name: "abc",
+//         items: ['a', 'b', 'c', 2],
+//     }
+// ]
+
+// type config = {
+//     id: number,
+//     name: string,
+//     theme: "light" | "dark"
+// };
+
+// let myObj: config = {
+//     id: 123,
+//     name: "Abc",
+//     theme: "dark",
+// }
+
+// ============= SUMMARY =============
+
+// types = string, number, boolean, {}, []
+// array types = string[]
+// array types = (string | number)[]
+// custom obj types = {id: number, name: string}
+// array in objects = objType[]
+
+// interface user {
+//     id: number,
+//     name: string,
+//     age: number,
+//     isAdmin: boolean,
+//     contact?: (number | string),
+// }
+
+
+// let userData: user = {
+//     id: 10024,
+//     name: "Arsalan",
+//     age: 18,
+//     isAdmin: true,
+//     contact: "0336-349134",
+// }
+
+// interface Employee extends user {
+//     companyName: string,
+//     joiningDate?: Date,
+//     salary: number
+// }
+
+// let emp: Employee = {
+//     id: 10024,
+//     name: "Arsalan",
+//     age: 18,
+//     isAdmin: true,
+//     contact: "0336-349134",
+//     companyName: "Koderlabs",
+//     salary: 10000
+// }
+
+// interface user {
+//     id: number,
+//     name: string,
+//     age: number
+// };
+
+// interface Emp<E> {
+//     companyName: string,
+//     joiningDate?: Date,
+//     extras: E[]
+// };
+
+// let user: Emp<user> = {
+//     companyName: "Koderlabs",
+//     extras: [
+//         {
+//             id: 124,
+//             name: "abc",
+//             age: 15
+//         }
+//     ]
+// }
